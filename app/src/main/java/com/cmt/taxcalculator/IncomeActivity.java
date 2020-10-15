@@ -50,7 +50,13 @@ public class IncomeActivity extends AppCompatActivity {
         long Total = 0;
         long Tax=0;
         long in= Integer.parseInt(et.getText().toString());
-        if (in >= 200000 && in < 1000000)
+        if(in < 200000)
+        {
+            Tax = 0;
+            Total = in + Tax;
+        }
+        
+        else if (in >= 200000 && in < 1000000)
         {
             Tax= (in * 5)/100;
             Total = in + Tax;

@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cmt.taxcalculator.GSTActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_amt"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    tools:ignore="Autofill" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_perc"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    tools:ignore="Autofill" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            
+
+
+            <Button
+                android:id="@+id/btn_gstcal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimary"
+                android:text="Calculate"
+                android:textColor="@android:color/white"
+                tools:ignore="HardcodedText" />
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/input_layout_gst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <EditText
+                    android:id="@+id/gst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_gstvalue"
+                    android:inputType="number"
+                    android:maxEms="0"
+                    tools:ignore="Autofill" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/input_layout_total_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/gstamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_totalamount"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -20,6 +20,7 @@
         <activity android:name=".IncomeActivity" />
         <activity android:name=".SplashScreen" />
         <activity android:name=".EMIActivity" />
+        <activity android:name=".GSTActivity" />
     </application>
 
 </manifest>

@@ -5,4 +5,9 @@
     <string name="hint_years">How Many Years</string>
     <string name="hint_emi">EMI ₹</string>
     <string name="hint_interest_total">Total Interest for Loan ₹</string>
+     <string name="hint_amt">Amount ₹</string>
+<string name="hint_gstvalue">GST ₹</string>
+<string name="hint_totalamount">Total Amount ₹</string>
+    <string name="hint_perc">GST %</string>
+
 </resources>

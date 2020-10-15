@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button b1;
     Button b2;
+     Button b3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         b1 = findViewById(R.id.button1);
         b2 = findViewById(R.id.button2);
+         b3 = findViewById(R.id.button3);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, com.cmt.taxcalculator.EMIActivity.class);
+                startActivity(intent);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, com.cmt.taxcalculator.GSTActivity.class);
                 startActivity(intent);
             }
         });
